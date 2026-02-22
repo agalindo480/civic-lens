@@ -142,10 +142,20 @@ table {
   --watchdog-white: #F1FAEE;
   --truth-text: #333;
   --story-subtitle: #457B9D;
+
   --font-body: "Source Sans 3", sans-serif;
-  --font-heading: 'Merriweather', serif;
+  --font-heading: "Merriweather", serif;
+
   --shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-  --transition: all 0.5s ease;
+  --transition: 0.25s ease;
+  /* theme tokens */
+  --page-bg: var(--watchdog-white);
+  --page-text: var(--truth-text);
+  --card-bg: #eef5ea;
+  --card-text: var(--truth-text);
+  --featured-bg: #ffffff;
+  --featured-text: var(--truth-text);
+  --rule: rgba(69, 123, 157, 0.6);
 }
 
 /* Manual Light/Dark Mode Styles*/
