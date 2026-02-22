@@ -484,6 +484,15 @@ video {
   }
 }
 
+@media (prefers-color-scheme: dark) {
+  body:not(.light-mode) {
+    --page-bg: #3b3b3b;
+    --page-text: #F1FAEE;
+    --card-bg: #2f2f2f;
+    --rule: rgba(241, 250, 238, 0.3);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   * {
     transition: none !important;
