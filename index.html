@@ -169,94 +169,90 @@
       </div>
     </section>
 
+    <section id="alerts" class="content-section">
+      <h2>Stay Informed. Stay Empowered.</h2>
+      <p class="section-subtitle">Receive text messages with the news you want to know.</p>
+
+      <form class="alerts-form" action="https://wp.zybooks.com/form-viewer.php" method="post">
+        <div class="form-row">
+          <div class="field">
+            <label for="full-name">Name</label>
+            <input id="full-name" name="full-name" type="text" autocomplete="name" required>
+          </div>
+
+          <div class="field">
+            <label for="mobile">Mobile</label>
+            <input id="mobile" name="mobile" type="tel" autocomplete="tel" required inputmode="tel">
+          </div>
+        </div>
+
+        <fieldset class="prefs">
+          <legend>Notification Preferences</legend>
+
+          <div class="prefs-grid">
+            <label><input type="checkbox" name="prefs" value="breaking-news"> Breaking News</label>
+            <label><input type="checkbox" name="prefs" value="politics"> Politics</label>
+            <label><input type="checkbox" name="prefs" value="weather"> Weather</label>
+            <label><input type="checkbox" name="prefs" value="sports"> Sports</label>
+            <label><input type="checkbox" name="prefs" value="entertainment"> Entertainment</label>
+            <label><input type="checkbox" name="prefs" value="world"> World</label>
+            <label><input type="checkbox" name="prefs" value="financial"> Financial</label>
+          </div>
+        </fieldset>
+
+        <button class="btn-submit" type="submit">Subscribe</button>
+      </form>
+    </section>
+  </main>
 
 
-    The Cost of Silence: Whistleblower Stories from Inside Tech Giants
-    Former employees speak out about ethical breaches in data privacy and surveillance.
 
-    Unequal Justice: How Bail Systems Harm the Poor
-    An investigative series on cash bail and its disproportionate impact.
+  Name
 
-    Invisible Work: The Lives of Migrant Caregivers
-    Humanizing the labor that keeps households and economies afloat.
+  Mobile
 
-    Redlined Still: A New Map of Modern-Day Housing Discrimination
-    Data visualization showing systemic inequality in real estate today.
+  Notification Preferences
 
-    Climate Injustice: Who Pays for Pollution?
-    Communities of color bear the brunt of environmental damage.
+  Breaking News
+  Politics
+  Weather
+  Sports
+  Entertainment
+  World
+  Financial
 
-    Teaching Under Fire: The Fight for Inclusive Education
-    Teachers navigate book bans, curriculum restrictions, and culture wars.
+  Subscribe
 
-    Food Deserts and Corporate Abandonment
-    Why access to nutrition is a zip code lottery.
+  Follow Us
+  Twitter/X
+  Instagram
+  YouTube
+  TikTok
+  LinkedIn
 
-    Policing Mental Health: A Broken Response System
-    Examining police interactions with those in crisis.
-
-    The Disinformation Economy
-    Tracing profit motives behind fake news empires.
-
-    Facing the Algorithm: AI and Racial Bias
-    The coded inequalities that shape our lives.
-
-    The Voting Maze
-    A guide to understanding your rights amid changing laws.
-
-    After the Cameras Leave: Long-Term Crisis Recovery
-    Rebuilding trust and infrastructure in disaster-hit communities.
+  &copy; 2025 Civic Lens. All rights reserved.
 
 
-    Stay Informed. Stay Empowered.
-    Receive text messages with the news you want to know.
+  <script>
+    const toggleButton = document.getElementById('theme-toggle');
 
-    Name
+    toggleButton.addEventListener('click', () => {
+      const body = document.body;
 
-    Mobile
-
-    Notification Preferences
-
-    Breaking News
-    Politics
-    Weather
-    Sports
-    Entertainment
-    World
-    Financial
-
-    Subscribe
-
-    Follow Us
-    Twitter/X
-    Instagram
-    YouTube
-    TikTok
-    LinkedIn
-
-    &copy; 2025 Civic Lens. All rights reserved.
-
-
-    <script>
-      const toggleButton = document.getElementById('theme-toggle');
-
-      toggleButton.addEventListener('click', () => {
-        const body = document.body;
-
-        // Toggle manually between light and dark mode
-        if (body.classList.contains('dark-mode')) {
-          body.classList.remove('dark-mode');
-          body.classList.add('light-mode');
-        } else if (body.classList.contains('light-mode')) {
-          body.classList.remove('light-mode');
-          body.classList.add('dark-mode');
-        } else {
-          // No class set yet, determine system preference
-          const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-          body.classList.add(prefersDark ? 'light-mode' : 'dark-mode');
-        }
-      });
-    </script>
+      // Toggle manually between light and dark mode
+      if (body.classList.contains('dark-mode')) {
+        body.classList.remove('dark-mode');
+        body.classList.add('light-mode');
+      } else if (body.classList.contains('light-mode')) {
+        body.classList.remove('light-mode');
+        body.classList.add('dark-mode');
+      } else {
+        // No class set yet, determine system preference
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        body.classList.add(prefersDark ? 'light-mode' : 'dark-mode');
+      }
+    });
+  </script>
 </body>
 
 </html>
