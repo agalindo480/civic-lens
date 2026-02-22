@@ -401,7 +401,6 @@ video {
   transition: all var(--transition);
 }
 
-/* subscribe hover → match body background */
 .btn-submit:hover {
   background: var(--page-bg);
   color: var(--blue-bulletin);
@@ -485,18 +484,12 @@ video {
   }
 }
 
-/* -----------------------------
-   REDUCED MOTION
-------------------------------*/
 @media (prefers-reduced-motion: reduce) {
   * {
     transition: none !important;
   }
 }
 
-/* -----------------------------
-   :HAS() FEATURE QUERY
-------------------------------*/
 @supports (selector(:has(*))) {
   body:has(#menu-toggle:checked) .menu {
     display: grid;
