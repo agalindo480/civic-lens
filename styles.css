@@ -491,7 +491,7 @@ video {
 }
 
 @supports (selector(:has(*))) {
-  body:has(#menu-toggle:checked) .menu {
+  body:has(#menu--toggle:checked) .menu {
     display: grid;
   }
 }
